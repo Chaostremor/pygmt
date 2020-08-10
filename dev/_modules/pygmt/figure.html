@@ -508,7 +508,7 @@
 <span class="sd">        Shift plot origin in x and/or y directions.</span>
 
 <span class="sd">        This method shifts plot origin relative to the current origin by</span>
-<span class="sd">        (*xshift*,*yshift*) and optionally append the length unit (**c**,</span>
+<span class="sd">        (*xshift*, *yshift*) and optionally append the length unit (**c**,</span>
 <span class="sd">        **i**, or **p**).</span>
 
 <span class="sd">        Prepend **a** to shift the origin back to the original position after</span>
@@ -518,7 +518,7 @@
 <span class="sd">        move the origin relative to its current location.</span>
 
 <span class="sd">        Detailed usage at</span>
-<span class="sd">        :gmt-docs:`GMT_Docs.html#plot-positioning-and-layout-the-x-y-options`</span>
+<span class="sd">        :gmt-docs:`cookbook/options.html#plot-positioning-and-layout-the-x-y-options`</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -526,6 +526,14 @@
 <span class="sd">            Shift plot origin in x direction.</span>
 <span class="sd">        yshift : str</span>
 <span class="sd">            Shift plot origin in y direction.</span>
+
+<span class="sd">        Notes</span>
+<span class="sd">        -----</span>
+<span class="sd">        For GMT 6.1.0, this function can&#39;t be used as the first plotting</span>
+<span class="sd">        function of :meth:`pygmt.Figure`, since it relies the *region* and</span>
+<span class="sd">        *projection* settings from previous commands.</span>
+
+<span class="sd">        .. TODO: Remove the notes when PyGMT bumps to GMT&gt;=6.1.1.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_preprocess</span><span class="p">()</span>
         <span class="n">args</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;-T&quot;</span><span class="p">]</span>
@@ -600,7 +608,7 @@
         &copy; Copyright 2017-2020, The PyGMT Developers.
       
         <span class="commit">
-          Revision <code><a href="https://github.com/GenericMappingTools/pygmt/commit/bedb48d5cf105c37573f8e8c5d74b97f1f741187">bedb48d</a></code>.
+          Revision <code><a href="https://github.com/GenericMappingTools/pygmt/commit/2ddbb0e1977af85bf6a6ac63d7cbac9da3d08f05">2ddbb0e</a></code>.
         </span>
       
 

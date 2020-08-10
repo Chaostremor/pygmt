@@ -59,7 +59,7 @@ to name the resulting output ASCII file.
 
     fig = pygmt.Figure()
     # Plot the earth relief grid on Cylindrical Stereographic projection, masking land areas
-    fig.basemap(region="g", frame=True, projection="Cyl_stere/150/-20/8i")
+    fig.basemap(region="d", frame=True, projection="Cyl_stere/8i")
     fig.grdimage(grid=grid, cmap="gray")
     fig.coast(land="#666666")
     # Plot using circles (c) of 0.15cm, the sampled bathymetry points
@@ -76,7 +76,7 @@ to name the resulting output ASCII file.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.215 seconds)
+   **Total running time of the script:** ( 0 minutes  1.234 seconds)
 
 
 .. _sphx_glr_download_gallery_grid_track_sampling.py:
